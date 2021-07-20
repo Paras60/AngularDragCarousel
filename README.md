@@ -4,7 +4,7 @@ AngularDragCarousel
 
 ## Description
 
-Login Page using Angular, Javascript, HTML and CSS
+Drag Carousel using Angular, Javascript, HTML and CSS
 
 ## Getting Started
 
