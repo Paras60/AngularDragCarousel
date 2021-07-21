@@ -13,8 +13,6 @@ export class AppComponent {
     return document.querySelector(selector);
   };
 
-
-
   next() {
     let hideText;
     if (this.$(".hide")) {
