@@ -87,6 +87,10 @@ body {
     border-radius: 12px;
     background: white;
     transition: transform 1s, opacity 1s;
+    background-image: url("../src/assets/9.png");
+    background-repeat: no-repeat, repeat;
+    background-size: 115px 105px;
+    background-position: 50% 20%;
 }
 
 .list .act {
@@ -131,7 +135,7 @@ body {
 
 .box-content {
     position: absolute;
-    top: 34%;
+    top: 63%;
     left: 29%;
     width: 5rem;
     text-align: center;
@@ -140,12 +144,16 @@ body {
 
 .start_here {
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 19%;
     width: 8rem;
     text-align: center;
     font-weight: bold;
     font-size: 13px;
+}
+
+.navbar-nav {
+    font-size: 12px;
 }
 
 .mtnlogo {
@@ -156,7 +164,7 @@ body {
 
 .arrow {
     position: absolute;
-    top: 80%;
+    top: 69%;
 }
 
 .cursor {
@@ -168,151 +176,104 @@ body {
     margin-top: -2rem;
     font-size: 1.5rem;
     border-bottom: 5px solid #FFC000;
+    .box-content {
+        top: 52%;
+    }
 }
 
 .mgr20 {
     margin-right: 20rem;
 }
 
+.search-icon {
+    width: 82%;
+}
+
 .tile {
+    margin-left: 12rem;
+}
+
+.tile,
+.tile1,
+.tile2,
+.tile3,
+.tile4,
+.tile5,
+.tile6,
+.tile7,
+.tile8,
+.tile9,
+.tile10,
+.tile11,
+.tile12,
+.tile13 {
     background-color: hsl(185, 32%, 46%);
     height: 519px;
     width: 15px;
-    margin-left: 12rem;
     position: absolute;
     z-index: 0;
     opacity: 0.1;
 }
 
 .tile1 {
-    background-color: hsl(185, 32%, 46%);
-    ;
-    height: 519px;
-    width: 15px;
     margin-left: 16.5rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile2 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 21rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile3 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 25.5rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile4 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 30rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile5 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 34.5rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile6 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 39rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile7 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 43.5rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile8 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 48rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile9 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 52.5rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile10 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 57rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile11 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 61rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile12 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 66rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
 }
 
 .tile13 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
     margin-left: 70.5rem;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: orange;
+    border-radius: 70%;
+    display: inline-block;
+    margin: 12px 10px 0 10px;
 }
 
 .paragraph-text {
@@ -335,7 +296,8 @@ body {
         opacity: 1;
     }
     .list .hide {
-        // opacity: 0.5;
+        opacity: 1;
+        transition: opacity .5s, transform .5s;
         transform: translateX(-420px) scale(.85);
     }
     // .list .right-item {
@@ -343,12 +305,8 @@ body {
     // }
     .list .right-item {
         opacity: 1;
-        transition: opacity .5s, transform 1.5s;
+        transition: opacity .5s, transform .5s;
         transform: translateX(420px) scale(.85);
-    }
-    .list .hide {
-        opacity: 1;
-        transition: opacity .5s, transform 1.5s;
     }
 }
 

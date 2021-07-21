@@ -33,8 +33,9 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="mgr1">
-                    <img class="d-block w-100 mgt05" src="../assets/icons8-search-24.png" alt="search">
+                    <img class="search-icon d-block mgt05" src="../assets/icons8-search-24.png" alt="search">
                 </li>
+                <span class="dot"></span>
                 <li class="nav-item dropdown mgr10">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Personal
@@ -85,7 +86,7 @@
     <div class="tile13">
     </div>
     <div class="background">
-        <div>
+        <div (swipe)="onSwipe($event)">
             <ul class="list">
                 <li class="hide rel">
                     <p class='box-content'>Mobile Internet</p>
@@ -94,7 +95,6 @@
                     <p class='box-content'>Home Internet</p>
                 </li>
                 <li class="act center_item rel">
-                    <!-- <img class='image' src="../assets/9.png" /> -->
                     <p class='box-content'>Get a device</p>
                     <p class="start_here">Start here ></p>
                 </li>
@@ -106,7 +106,7 @@
                 </li>
             </ul>
         </div>
-        <div class="swipe" (swipe)="onSwipe($event)"></div>
+        <!-- <div class="swipe" (swipe)="onSwipe($event)"></div> -->
         <div class="arrow ">
             <span>
           <img class = "cursor mgr20" src="../assets/left.png" alt="left" (click) = "next()">
