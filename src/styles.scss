@@ -100,7 +100,7 @@ body {
 
 .list .prev,
 .list .next {
-    cursor: pointer;
+    cursor: all-scroll;
 }
 
 .temp {
@@ -177,6 +177,7 @@ body {
     margin-top: -2rem;
     font-size: 1.5rem;
     border-bottom: 5px solid #FFC000;
+    cursor: all-scroll;
     .box-content {
         top: 61%;
         width: 10rem;
@@ -295,6 +296,7 @@ body {
         opacity: 1;
         transition: opacity .5s, transform .5s;
         transform: translateX(-420px) scale(.85);
+        cursor: all-scroll;
     }
     // .list .right-item {
     //     /* opacity: 0.5; */
