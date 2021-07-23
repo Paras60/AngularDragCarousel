@@ -5,7 +5,7 @@ body {
     height: 100%;
     min-height: 100%;
     background: #e2e0e0;
-    font-family: Work sans regular;
+    font-family: Wok sans regular;
 }
 
 .background {
@@ -68,6 +68,14 @@ body {
     background: #fed5c8;
 }
 
+.navbar-nav {
+    font-size: 16px;
+}
+
+.navbar {
+    height: 58px;
+}
+
 .list {
     height: 200px;
     position: absolute;
@@ -91,7 +99,7 @@ body {
     background-repeat: no-repeat, repeat;
     background-size: 115px 105px;
     background-position: 50% 20%;
-    box-shadow: inset 0 -3em 3em rgb(0 0 0 / 8%), 0 0 0 1px white, 0.3em 0.3em 1em rgb(0 0 0 / 17%);
+    // box-shadow: inset 0 -3em 3em rgb(0 0 0 / 8%), 0 0 0 1px white, 0.3em 0.3em 1em rgb(0 0 0 / 17%);
 }
 
 .list .act {
@@ -153,10 +161,6 @@ body {
     font-size: 13px;
 }
 
-.navbar-nav {
-    font-size: 12px;
-}
-
 .mtnlogo {
     position: absolute;
     width: 4rem;
@@ -197,80 +201,66 @@ body {
     margin-left: 12rem;
 }
 
-.tile,
-.tile1,
-.tile2,
-.tile3,
-.tile4,
-.tile5,
-.tile6,
-.tile7,
-.tile8,
-.tile9,
-.tile10,
-.tile11,
-.tile12,
-.tile13 {
-    background-color: hsl(185, 32%, 46%);
-    height: 519px;
-    width: 15px;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.1;
-}
-
-.tile1 {
-    margin-left: 16.5rem;
-}
-
-.tile2 {
-    margin-left: 21rem;
-}
-
-.tile3 {
-    margin-left: 25.5rem;
-}
-
-.tile4 {
-    margin-left: 30rem;
-}
-
-.tile5 {
-    margin-left: 34.5rem;
-}
-
-.tile6 {
-    margin-left: 39rem;
-}
-
-.tile7 {
-    margin-left: 43.5rem;
-}
-
-.tile8 {
-    margin-left: 48rem;
-}
-
-.tile9 {
-    margin-left: 52.5rem;
-}
-
-.tile10 {
-    margin-left: 57rem;
-}
-
-.tile11 {
-    margin-left: 61rem;
-}
-
-.tile12 {
-    margin-left: 66rem;
-}
-
-.tile13 {
-    margin-left: 70.5rem;
-}
-
+// .tile,
+// .tile1,
+// .tile2,
+// .tile3,
+// .tile4,
+// .tile5,
+// .tile6,
+// .tile7,
+// .tile8,
+// .tile9,
+// .tile10,
+// .tile11,
+// .tile12,
+// .tile13 {
+//     background-color: hsl(185, 32%, 46%);
+//     height: 90vh;
+//     width: 15px;
+//     position: absolute;
+//     z-index: 0;
+//     opacity: 0.1;
+// }
+// .tile1 {
+//     margin-left: 16.5rem;
+// }
+// .tile2 {
+//     margin-left: 21rem;
+// }
+// .tile3 {
+//     margin-left: 25.5rem;
+// }
+// .tile4 {
+//     margin-left: 30rem;
+// }
+// .tile5 {
+//     margin-left: 34.5rem;
+// }
+// .tile6 {
+//     margin-left: 39rem;
+// }
+// .tile7 {
+//     margin-left: 43.5rem;
+// }
+// .tile8 {
+//     margin-left: 48rem;
+// }
+// .tile9 {
+//     margin-left: 52.5rem;
+// }
+// .tile10 {
+//     margin-left: 57rem;
+// }
+// .tile11 {
+//     margin-left: 61rem;
+// }
+// .tile12 {
+//     margin-left: 66rem;
+// }
+// .tile13 {
+//     margin-left: 70.5rem;
+// }
 .dot {
     height: 8px;
     width: 8px;
@@ -278,6 +268,36 @@ body {
     border-radius: 70%;
     display: inline-block;
     margin: 12px 10px 0 10px;
+}
+
+.elemReverse {
+    animation: slidein 0.5s reverse;
+}
+
+@keyframes slidein {
+    from {
+        left: -500px;
+        opacity: 0;
+    }
+    to {
+        left: -420px;
+        opacity: 1;
+    }
+}
+
+.elemForward {
+    animation: slideright 0.5s reverse;
+}
+
+@keyframes slideright {
+    from {
+        right: 500px;
+        opacity: 0;
+    }
+    to {
+        right: 420px;
+        opacity: 0;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -312,30 +332,535 @@ body {
         margin-left: 23rem;
         margin-top: 6rem;
     }
-}
-
-@media screen and (min-width: 870px) and (max-width: 1279px) {
-    .main-menu {
-        visibility: hidden;
+    .cursor-left {
+        margin-right: 20rem;
     }
-    .list .prev {
-        transform: translateX(-220px) scale(.85);
-        opacity: 1;
-    }
-    .list .next {
-        transform: translateX(220px) scale(.85);
-        opacity: 1;
-    }
-    .paragraph-text {
-        z-index: 0;
-        position: absolute;
+    .tile {
         margin-left: 12rem;
-        margin-top: 4rem;
+    }
+    .tile,
+    .tile1,
+    .tile2,
+    .tile3,
+    .tile4,
+    .tile5,
+    .tile6,
+    .tile7,
+    .tile8,
+    .tile9,
+    .tile10,
+    .tile11,
+    .tile12,
+    .tile13 {
+        background-color: hsl(185, 32%, 46%);
+        height: 90vh;
+        width: 15px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
+    }
+    .tile1 {
+        margin-left: 16.5rem;
+    }
+    .tile2 {
+        margin-left: 21rem;
+    }
+    .tile3 {
+        margin-left: 25.5rem;
+    }
+    .tile4 {
+        margin-left: 30rem;
+    }
+    .tile5 {
+        margin-left: 34.5rem;
+    }
+    .tile6 {
+        margin-left: 39rem;
+    }
+    .tile7 {
+        margin-left: 43.5rem;
+    }
+    .tile8 {
+        margin-left: 48rem;
+    }
+    .tile9 {
+        margin-left: 52.5rem;
+    }
+    .tile10 {
+        margin-left: 57rem;
+    }
+    .tile11 {
+        margin-left: 61rem;
+    }
+    .tile12 {
+        margin-left: 66rem;
+    }
+    .tile13 {
+        margin-left: 70.5rem;
     }
 }
 
-@media screen and (max-width: 870px) {
+// @media screen and (max-width: 870px) {
+//     .paragraph-text {
+//         display: none;
+//     }
+//     .tile13,
+//     .tile12,
+//     .tile11,
+//     .tile10,
+//     .tile9,
+//     .tile8,
+//     .tile7,
+//     .tile6 {
+//         opacity: 0;
+//         display: none;
+//     }
+//     .box-content {
+//         top: 73%
+//     }
+// }
+// @media screen and (min-width: 1024px) and (max-width: 1279px) {
+//     .main-menu {
+//         visibility: hidden;
+//     }
+//     .list .prev {
+//         transform: translateX(-220px) scale(.85);
+//         opacity: 1;
+//     }
+//     .list .next {
+//         transform: translateX(220px) scale(.85);
+//         opacity: 1;
+//     }
+//     .list .hide {
+//         transform: translateX(-420px) scale(.85);
+//         opacity: 0;
+//     }
+//     .list .right-item {
+//         transform: translateX(420px) scale(.85);
+//         opacity: 0;
+//     }
+//     .tile13,
+//     .tile12,
+//     .tile11,
+//     .tile10 {
+//         opacity: 0;
+//         display: none;
+//     }
+//     .paragraph-text {
+//         display: none;
+//     }
+// }
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .mtnlogo {
+        right: 72%;
+    }
     .paragraph-text {
         display: none;
     }
+    .tile {
+        margin-left: 5.5rem;
+    }
+    .tile1 {
+        margin-left: 9.5rem;
+    }
+    .tile2 {
+        margin-left: 13.5rem;
+    }
+    .tile,
+    .tile1,
+    .tile2 {
+        background-color: hsl(185, 32%, 46%);
+        height: 90vh;
+        width: 15px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
+    }
+    .background {
+        margin: 0 60px;
+    }
+    .arrow {
+        position: absolute;
+        top: 80%;
+    }
 }
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .mtnlogo {
+        right: 72%;
+    }
+    .paragraph-text {
+        display: none;
+    }
+    .tile {
+        margin-left: 5.5rem;
+    }
+    .tile1 {
+        margin-left: 9.5rem;
+    }
+    .tile2 {
+        margin-left: 13.5rem;
+    }
+    .tile3 {
+        margin-left: 17.5rem;
+    }
+    .tile,
+    .tile1,
+    .tile2,
+    .tile3 {
+        background-color: hsl(185, 32%, 46%);
+        height: 90vh;
+        width: 15px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
+    }
+}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .mtnlogo {
+        right: 72%;
+    }
+    .paragraph-text {
+        display: none;
+    }
+    .tile {
+        margin-left: 5.5rem;
+    }
+    .tile1 {
+        margin-left: 9.5rem;
+    }
+    .tile2 {
+        margin-left: 13.5rem;
+    }
+    .tile3 {
+        margin-left: 17.5rem;
+    }
+    .tile4 {
+        margin-left: 21.5rem;
+    }
+    .tile,
+    .tile1,
+    .tile2,
+    .tile3,
+    .tile4 {
+        background-color: hsl(185, 32%, 46%);
+        height: 90vh;
+        width: 15px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
+    }
+}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+/* ----------- iPhone X ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .mtnlogo {
+        right: 72%;
+    }
+    .paragraph-text {
+        display: none;
+    }
+    .tile1 {
+        margin-left: 16.5rem;
+    }
+    .tile2 {
+        margin-left: 21rem;
+    }
+    .tile3 {
+        margin-left: 25.5rem;
+    }
+    .tile4 {
+        margin-left: 30rem;
+    }
+    .tile5 {
+        margin-left: 34.5rem;
+    }
+    .tile6 {
+        margin-left: 39rem;
+    }
+    // .tile7 {
+    //     margin-left: 43.5rem;
+    // }
+    // .tile8 {
+    //     margin-left: 48rem;
+    // }
+    // .tile9 {
+    //     margin-left: 52.5rem;
+    // }
+    // .tile10 {
+    //     margin-left: 57rem;
+    // }
+    // .tile11 {
+    //     margin-left: 61rem;
+    // }
+    // .tile12 {
+    //     margin-left: 66rem;
+    // }
+    // .tile13 {
+    //     margin-left: 70.5rem;
+    // }
+    .tile,
+    .tile1,
+    .tile2,
+    .tile3,
+    .tile4,
+    .tile5,
+    .tile6 {
+        background-color: hsl(185, 32%, 46%);
+        height: 90vh;
+        width: 15px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
+    }
+}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {}
+
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+
+
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Landscape */
+
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+
+
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+
+
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Landscape */
+
+
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+
+
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* ----------- Galaxy S3 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .mtnlogo {
+        right: 72%;
+    }
+    .paragraph-text {
+        display: none;
+    }
+    .tile {
+        margin-left: 10.5rem;
+    }
+    .tile {
+        background-color: hsl(185, 32%, 46%);
+        height: 90vh;
+        width: 15px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
+    }
+}
+
+
+/* Landscape */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+/* ----------- Galaxy S6 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {}
+
+
+/* Portrait */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {}
