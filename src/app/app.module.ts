@@ -2,6 +2,7 @@ import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule, HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import * as Hammer from 'hammerjs'
 import { AppComponent } from './app.component';
+import { StoreComponent } from './store/store.component';
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any> {
@@ -11,7 +12,8 @@ export class MyHammerConfig extends HammerGestureConfig {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
