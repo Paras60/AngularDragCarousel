@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+<<<<<<< HEAD
   "cli": {
     "analytics": "32476acd-1895-47b2-bf7b-fcf252ec4ef4"
   },
@@ -12,6 +13,14 @@
         "@schematics/angular:component": {
           "style": "scss"
         },
+=======
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "AngularDragCarousel": {
+      "projectType": "application",
+      "schematics": {
+>>>>>>> a136389 (initial commit)
         "@schematics/angular:application": {
           "strict": true
         }
@@ -23,18 +32,29 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/carousel",
+=======
+            "outputPath": "dist/AngularDragCarousel",
+>>>>>>> a136389 (initial commit)
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+<<<<<<< HEAD
             "inlineStyleLanguage": "scss",
+=======
+>>>>>>> a136389 (initial commit)
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.scss"
+=======
+              "src/styles.css"
+>>>>>>> a136389 (initial commit)
             ],
             "scripts": []
           },
@@ -75,10 +95,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "carousel:build:production"
             },
             "development": {
               "browserTarget": "carousel:build:development"
+=======
+              "browserTarget": "AngularDragCarousel:build:production"
+            },
+            "development": {
+              "browserTarget": "AngularDragCarousel:build:development"
+>>>>>>> a136389 (initial commit)
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +113,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "carousel:build"
+=======
+            "browserTarget": "AngularDragCarousel:build"
+>>>>>>> a136389 (initial commit)
           }
         },
         "test": {
@@ -96,13 +127,20 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+<<<<<<< HEAD
             "inlineStyleLanguage": "scss",
+=======
+>>>>>>> a136389 (initial commit)
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.scss"
+=======
+              "src/styles.css"
+>>>>>>> a136389 (initial commit)
             ],
             "scripts": []
           }
@@ -110,5 +148,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "carousel"
+=======
+  "defaultProject": "AngularDragCarousel"
+>>>>>>> a136389 (initial commit)
 }
